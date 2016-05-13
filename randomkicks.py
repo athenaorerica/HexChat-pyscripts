@@ -4,7 +4,7 @@
 # probably not commented because too lazy
 
 __module_name__ = "RandomKicks"
-__module_version__ = "0.3.4b"
+__module_version__ = "1.0"
 __module_description__ = "Adds a random message to kicks from a file."
 __author__ = "ApolloJustice"
 

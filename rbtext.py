@@ -4,7 +4,7 @@
 # probably not commented because too lazy
 
 __module_name__ = "RainbowFonts"
-__module_version__ = "0.1b"
+__module_version__ = "1.0"
 __module_description__ = "Rainbowifies text"
 __author__ = "ApolloJustice"
 

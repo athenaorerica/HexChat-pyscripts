@@ -4,7 +4,7 @@
 # probably not commented because too lazy
 
 __module_name__ = "AutoUnban"
-__module_version__ = "1.0.0b"
+__module_version__ = "1.0"
 __module_description__ = "Unbans you if you have flag +r on a channel"
 __author__ = "ApolloJustice"
 

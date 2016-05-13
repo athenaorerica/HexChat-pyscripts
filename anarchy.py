@@ -4,7 +4,7 @@
 # probably not commented because too lazy
 
 __module_name__ = "Anarchizer"
-__module_version__ = "0.0.1a"
+__module_version__ = "1.0"
 __module_description__ = "Makes a channel into an ANARCHY"
 __author__ = "ApolloJustice"
 

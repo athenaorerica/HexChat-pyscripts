@@ -4,7 +4,7 @@
 # probably not commented because too lazy
 
 __module_name__ = 'Highlight Logger'
-__module_version__ = '2'
+__module_version__ = '1.0'
 __module_description__ = 'Prints highlights to another tab'
 __author__ = "ApolloJustice"
 

@@ -42,7 +42,7 @@ def disablechan(word, word_eol, userdata):
 		hexchat.command('raw PART %s' % chan)
 	elif len(word) >= 2:
 		hexchat.command('raw PART %s :%s' % (chan, word_eol[1]))
-	hexchat.emit_print('Notice', '%s [S]' % __module_name__, 'Parted %s and %s it in ZNC.' % (action, chan))
+	hexchat.emit_print('Notice', '%s [S]' % __module_name__, 'Parted %s and %s it in ZNC.' % (chan, action))
 	return hexchat.EAT_ALL
 
 def sudo(word, word_eol, userdata):

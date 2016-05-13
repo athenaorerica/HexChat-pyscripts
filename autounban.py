@@ -45,14 +45,13 @@ def storechan(word, word_eol, userdata):
 	unban()
 		
 def togglealerts(word, word_eol, userdata):
-	if hexchat.get_pluginpref('ajaub_alertsenabled') == 1:
+	setting = hexchat.get_pluginpref('ajaub_alertsenabled')
+	if setting:
 		hexchat.emit_print("Notice", "AutoUB [PL]", "You have disabled alerts. To turn them on, /aubtogglealerts")
-		hexchat.set_pluginpref('ajaub_alertsenabled', '0')
-		return hexchat.EAT_ALL
-	if hexchat.get_pluginpref('ajaub_alertsenabled') == 0:
+	else:
 		hexchat.emit_print("Notice", "AutoUB [PL]", "You have enabled alerts. To turn them off, /aubtogglealerts")
-		hexchat.set_pluginpref('ajaub_alertsenabled', '1')
-		return hexchat.EAT_ALL
+	hexchat.set_pluginpref('ajaub_alertsenabled', str(1 - setting))
+	return hexchat.EAT_ALL
 
 def chgcooldown(word, word_eol, userdata):
 	if len(word) == 1:

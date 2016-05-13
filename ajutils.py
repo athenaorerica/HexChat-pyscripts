@@ -18,6 +18,12 @@ def nea():
 def unf():
 	hexchat.emit_print('Notice', '%s [S]' % __module_name__, 'User not found.')
 
+def getHost(uList, target):
+	for user in uList:
+		if user.nick.lower() == target.lower(): break
+	
+	return user
+
 def clearstatus(word, word_eol, userdata):
 	anyLeft = 1
 	while anyLeft == 1:
@@ -69,11 +75,9 @@ def hostignore(word, word_eol, userdata):
 	
 	if len(word) <= 1: 
 		nea()
-		return hexchat.EAT_ALL
-
-	for user in userlist:
-		if user.nick.lower() == word[1].lower(): break
+		return hexchat.EAT_ALLs
 		
+	user = getHost(userlist, word[1])
 	host = user.host.split('@')[1]
 	
 	if user.nick.lower() == word[1].lower(): hexchat.command('%s *!*@%s' % (action, host))
@@ -88,15 +92,13 @@ def hostMode(word, word_eol, userdata):
 	if len(word) <= 1: 
 		nea()
 		return hexchat.EAT_ALL
-		
-	for user in userlist:
-		if user.nick.lower() == word[1].lower(): break
-	
-	host = user.host.split('@')[1]
 	
 	if any(ext in word[1] for ext in ["@", "$", ":"]):
 		hexchat.command('raw MODE %s %s %s' % (hexchat.get_info('channel'), mode, word[1]))
 		return hexchat.EAT_ALL
+	
+	user = getHost(userlist, word[1])
+	host = user.host.split('@')[1]
 	
 	if user.nick.lower() == word[1].lower(): hexchat.command('raw MODE %s %s *!*@%s' % (hexchat.get_info('channel'), mode, host))
 	else: unf()

@@ -31,7 +31,7 @@ def clearstatus(word, word_eol, userdata):
 def disablechan(word, word_eol, userdata):
 	chan = hexchat.get_info('channel')
 	action = userdata
-	if action = "disabled": hexchat.command('RAW PRIVMSG *status :disablechan %s' % chan)
+	if action == "disabled": hexchat.command('RAW PRIVMSG *status :disablechan %s' % chan)
 	if len(word) == 1:
 		hexchat.command('raw PART %s' % chan)
 	elif len(word) >= 2:

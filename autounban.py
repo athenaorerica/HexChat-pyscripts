@@ -43,22 +43,14 @@ def storechan(word, word_eol, userdata):
 	global chan
 	chan = word[3]
 	unban()
-
-def disablealerts(word, word_eol, userdata):
-	if hexchat.get_pluginpref('ajaub_alertsenabled') == 0:
-		hexchat.emit_print("Notice", "AutoUB [PL]", "Alerts are already disabled. To turn them back on, /aubalerts")
-		return hexchat.EAT_ALL
+		
+def togglealerts(word, word_eol, userdata):
 	if hexchat.get_pluginpref('ajaub_alertsenabled') == 1:
-		hexchat.emit_print("Notice", "AutoUB [PL]", "You have disabled alerts. To turn them back on, /aubalerts")
+		hexchat.emit_print("Notice", "AutoUB [PL]", "You have disabled alerts. To turn them on, /aubtogglealerts")
 		hexchat.set_pluginpref('ajaub_alertsenabled', '0')
 		return hexchat.EAT_ALL
-		
-def enablealerts(word, word_eol, userdata):
-	if hexchat.get_pluginpref('ajaub_alertsenabled') == 1:
-		hexchat.emit_print("Notice", "AutoUB [PL]", "Alerts are already enabled. To turn them off, /noaubalerts")
-		return hexchat.EAT_ALL
 	if hexchat.get_pluginpref('ajaub_alertsenabled') == 0:
-		hexchat.emit_print("Notice", "AutoUB [PL]", "You have enabled alerts. To turn them off, /noaubalerts")
+		hexchat.emit_print("Notice", "AutoUB [PL]", "You have enabled alerts. To turn them off, /aubtogglealerts")
 		hexchat.set_pluginpref('ajaub_alertsenabled', '1')
 		return hexchat.EAT_ALL
 
@@ -72,7 +64,6 @@ def chgcooldown(word, word_eol, userdata):
 	
 hexchat.hook_server("474", storechan)
 hexchat.hook_command("unlockautounban", unlock)
-hexchat.hook_command("noaubalerts", disablealerts)
-hexchat.hook_command("aubalerts", enablealerts)
+hexchat.hook_command("aubtogglealerts", togglealerts)
 hexchat.hook_command("aubcooldown", chgcooldown)
 hexchat.emit_print("Notice", __module_name__ + " [S]", "%s by %s loaded. You are using version %s of the script." % (__module_name__, __author__, __module_version__))

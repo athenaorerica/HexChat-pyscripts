@@ -10,7 +10,7 @@ __module_description__ = 'Now Playing script for Samuel Attard\'s Google Play Mu
 
 import hexchat, json, sys, os
 
-npskel = "np:\00306 {0} \017by\00307 {1}\017 from\00310 {2}\017 [\00303{3}\017/\00304{4}\017]"
+npskel = "np:\00306 {0} \017by\00307 {1}\017 from\00310 {2}\017 [\00303{3}\017/\00304{4}\017] [\00307GPMDP\017]"
 nosongfallback = "np: \00304Playback stopped.\017"
 
 if sys.platform.startswith("linux"): jsonpath = "~/.config/Google Play Music Desktop Player/json_store/playback.json"
@@ -32,7 +32,7 @@ def convertMillis(millis):
 
 def getString():
     try:
-        with open(jsonpath) as data_file:
+        with open(jsonpath, encoding="utf8") as data_file:
             data = json.load(data_file)
         if data["playing"] == False: prettyprint("E", "No song playing.")
         title = data["song"]["title"]

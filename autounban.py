@@ -32,7 +32,7 @@ def unban():
     if locked == 0:
         hexchat.command('RAW PRIVMSG ChanServ :unban ' + chan)
         hexchat.command('timer 1.5 RAW JOIN ' + chan)
-        if hexchat.get_pluginpref("aub_alertsenabled') == 1:
+        if hexchat.get_pluginpref("aub_alertsenabled") == 1:
             hexchat.emit_print("Notice", "AutoUB [PL]", "Unbanning yourself from %s. Won't auto-unban for the next %s seconds. [To turn these alerts off, /noaubalerts]" % (
                 chan, str(hexchat.get_pluginpref('aub_cooldown'))))
         locked = 1

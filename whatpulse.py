@@ -1,14 +1,23 @@
-# whatpulse.py by ApolloJustice
-# for use with Python 3
-# non PEP-8 compliant because honestly fuck that
-# probably not commented because too lazy
+# whatpulse.py
+# this file is part of hexchat-pyscripts
+#
+# whatpulse spammer
+#
+# written by and copyright (C) Erica Garcia [athenaorerica] <me@athenas.space> 2019
+# licensed under the MIT license [https://mit.athenas.space]
+#
+# this code says: trans rights
+#
+# don't like the previous statement? suck it up, or write your own code. ^-^
 
-import requests, hexchat, threading
+import requests
+import hexchat
+import threading
 
 __module_name__ = 'whatpulse spam'
 __module_description__ = 'spams whatpulse'
 __module_version__ = '0.0.3a'
-__author__ = 'ApolloJustice'
+__author__ = 'Erica Garcia [athenaorerica] <me@athenas.space>'
 
 wpUsername = "ApolloJustice"
 

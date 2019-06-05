@@ -3,6 +3,9 @@
 #
 # wraps easywinampcontrol for use with fb2k
 #
+# set your string in foo_winamp to the following:
+# %title%|%artist%|%album%|%codec%|%_foobar2000_version%
+#
 # written by and copyright (C) Erica Garcia [athenaorerica] <me@athenas.space> 2019
 # licensed under the MIT license [https://mit.athenas.space]
 #
@@ -20,7 +23,6 @@ import hexchat
 
 def wrap(word, word_eol, userdata):
     fullstr = word_eol[1].split('|')
-
     title = fullstr[0]
     artist = fullstr[1]
     album = fullstr[2]

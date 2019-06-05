@@ -6,6 +6,9 @@
 # set your string in foo_winamp to the following:
 # %title%|%artist%|%album%|%codec%|%_foobar2000_version%
 #
+# set an alias in hexchat called "dispcurrsong" with the following data:
+# reformatwp &7|%2|%3|%4|%5|%6
+#
 # written by and copyright (C) Erica Garcia [athenaorerica] <me@athenas.space> 2019
 # licensed under the MIT license [https://mit.athenas.space]
 #

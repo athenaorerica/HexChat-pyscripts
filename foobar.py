@@ -1,20 +1,20 @@
 # foobar.py
-# this file is part of hexchat-pyscripts
+# this file is part of HexChat-pyscripts
 #
 # wraps easywinampcontrol for use with fb2k
 #
+# written by and copyright © 2019 Erica Garcia [athenaorerica] <me@athenas.space>
+# licensed under the MIT license [https://license.athenas.space/mit] | SPDX-License-Identifier: MIT
+#
+# this code says: trans rights
+#
+# don't like that? suck it up, or write your own code ^-^
+
 # set your string in foo_winamp to the following:
 # %title%|%artist%|%album%|%codec%|%_foobar2000_version%
 #
 # set an alias in hexchat called "dispcurrsong" with the following data:
 # reformatwp &7|%2|%3|%4|%5|%6
-#
-# written by and copyright (C) Erica Garcia [athenaorerica] <me@athenas.space> 2019
-# licensed under the MIT license [https://mit.athenas.space]
-#
-# this code says: trans rights
-#
-# don't like the previous statement? suck it up, or write your own code. ^-^
 
 __module_name__ = "EWC Wrapper"
 __module_version__ = "0.0.1a"

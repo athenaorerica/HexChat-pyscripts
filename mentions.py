@@ -1,14 +1,14 @@
 # mentions.py
-# this file is part of hexchat-pyscripts
+# this file is part of HexChat-pyscripts
 #
 # highlight logger for hexchat
 #
-# written by and copyright (C) Erica Garcia [athenaorerica] <me@athenas.space> 2019
-# licensed under the MIT license [https://mit.athenas.space]
+# written by and copyright © 2019 Erica Garcia [athenaorerica] <me@athenas.space>
+# licensed under the MIT license [https://license.athenas.space/mit] | SPDX-License-Identifier: MIT
 #
 # this code says: trans rights
 #
-# don't like the previous statement? suck it up, or write your own code. ^-^
+# don't like that? suck it up, or write your own code ^-^
 
 __module_name__ = 'Highlight Logger'
 __module_version__ = '1.0'

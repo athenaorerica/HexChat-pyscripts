@@ -3,7 +3,7 @@
 #
 # automatically unbans you using chanserv
 #
-# written by and copyright © 2019 Erica Garcia [athenaorerica] <me@athenas.space>
+# written by and copyright © 2020 Erica Garcia [ericathesnark] <me@athenas.space>
 # licensed under the MIT license [https://license.athenas.space/mit] | SPDX-License-Identifier: MIT
 #
 # this code says: trans rights
@@ -13,7 +13,7 @@
 __module_name__ = "AutoUnban"
 __module_version__ = "1.0"
 __module_description__ = "Unbans you if you have flag +r on a channel"
-__author__ = "Erica Garcia [athenaorerica] <me@athenas.space>"
+__author__ = "Erica Garcia [ericathesnark] <me@athenas.space>"
 
 import hexchat
 

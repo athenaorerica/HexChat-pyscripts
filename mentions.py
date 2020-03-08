@@ -3,7 +3,7 @@
 #
 # highlight logger for hexchat
 #
-# written by and copyright © 2019 Erica Garcia [athenaorerica] <me@athenas.space>
+# written by and copyright © 2020 Erica Garcia [ericathesnark] <me@athenas.space>
 # licensed under the MIT license [https://license.athenas.space/mit] | SPDX-License-Identifier: MIT
 #
 # this code says: trans rights
@@ -13,7 +13,7 @@
 __module_name__ = 'Highlight Logger'
 __module_version__ = '1.0'
 __module_description__ = 'Prints highlights to another tab'
-__author__ = "Erica Garcia [athenaorerica] <me@athenas.space>"
+__author__ = "Erica Garcia [ericathesnark] <me@athenas.space>"
 
 import hexchat
 import re

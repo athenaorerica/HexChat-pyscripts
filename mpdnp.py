@@ -3,7 +3,7 @@
 #
 # now playing script for mpd
 #
-# written by and copyright © 2019 Erica Garcia [athenaorerica] <me@athenas.space>
+# written by and copyright © 2020 Erica Garcia [ericathesnark] <me@athenas.space>
 # licensed under the MIT license [https://license.athenas.space/mit] | SPDX-License-Identifier: MIT
 #
 # this code says: trans rights
@@ -11,7 +11,7 @@
 # don't like that? suck it up, or write your own code ^-^
 
 __module_name__ = 'mpdnp'
-__author__ = 'Erica Garcia [athenaorerica] <me@athenas.space>'
+__author__ = 'Erica Garcia [ericathesnark] <me@athenas.space>'
 __module_version__ = '1.0'
 __module_description__ = 'Now Playing script for Music Player Daemon'
 

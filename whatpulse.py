@@ -3,7 +3,7 @@
 #
 # whatpulse spammer
 #
-# written by and copyright © 2019 Erica Garcia [athenaorerica] <me@athenas.space>
+# written by and copyright © 2020 Erica Garcia [ericathesnark] <me@athenas.space>
 # licensed under the MIT license [https://license.athenas.space/mit] | SPDX-License-Identifier: MIT
 #
 # this code says: trans rights
@@ -17,7 +17,7 @@ import threading
 __module_name__ = 'whatpulse spam'
 __module_description__ = 'spams whatpulse'
 __module_version__ = '0.0.3a'
-__author__ = 'Erica Garcia [athenaorerica] <me@athenas.space>'
+__author__ = 'Erica Garcia [ericathesnark] <me@athenas.space>'
 
 # TODO: make this more configurable, this is terrible.
 
